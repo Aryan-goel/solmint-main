@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arbutus+Slab:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton:wght@400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.textoutline {
+  -webkit-text-stroke: .9px black;
+}
+.textoutline-header {
+  -webkit-text-stroke: .5px black;
+}
+
+.bg-dotted {
+  padding: 0;
+  margin: 0;
+  background-color: #f6fbf3;
+  background-image: radial-gradient(#dedddd7a 2px, transparent 2px);
+  background-size: 50px 50px;
+}
+.loader {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 2px solid #000;
+  border-right: 2px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
